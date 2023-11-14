@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Tanpa JS</title>
+    <style>
+        /* Tambahkan beberapa gaya agar terlihat lebih baik (opsional) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+   <center><h1>latihan form</h1></center> 
+
+    <form action="#" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="umur">Umur (1-100):</label>
+        <input type="number" id="umur" name="umur" min="1" max="100" required>
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+        <label for="warna">Warna Favorit:</label>
+        <select id="warna" name="warna" required>
+            <option value="merah">Merah</option>
+            <option value="biru">Biru</option>
+            <option value="hijau">Hijau</option>
+            <option value="kuning">Kuning</option>
+            <!-- Tambahkan opsi warna lainnya sesuai kebutuhan -->
+        </select>
+
+        <label>Jenis Bahasa yang Disukai:</label>
+        <label><input type="radio" name="bahasa" value="inggris" required> Bahasa Inggris</label>
+        <label><input type="radio" name="bahasa" value="spanyol"> Bahasa Spanyol</label>
+        <label><input type="radio" name="bahasa" value="prancis"> Bahasa Prancis</label>
+        <!-- Tambahkan opsi bahasa lainnya sesuai kebutuhan -->
+
+        <button type="submit">Kirim</button>
+    </form>
+
+</body>
+</html>
